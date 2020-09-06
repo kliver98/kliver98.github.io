@@ -64,10 +64,9 @@
     <div class="container">
       <div class="text-center pt-5">
         <h2 class="pt-4">
-          Este formulario sirve para contacterme por alguna inquietud o
-          propuesta
+          Este formulario sirve para comunicarse directamente conmigo
         </h2>
-        <h2>También por algún error en la página</h2>
+        <h2>También para informar algún error en la página</h2>
       </div>
       <form class="needs-validation pt-5" novalidate>
         <div class="form-row">
@@ -80,6 +79,7 @@
               class="form-control"
               id="validationCustom01"
               placeholder="Escribe tú nombre"
+              autocomplete="off"
               required
             />
             <div class="valid-feedback">Se ve bien!</div>
@@ -90,6 +90,7 @@
               type="text"
               class="form-control"
               id="validationCustom02"
+              autocomplete="off"
               placeholder="Como te gustaría que te digan"
             />
             <div class="valid-feedback">Se ve bien!</div>
@@ -97,7 +98,9 @@
         </div>
         <div class="form-row">
           <div class="col-md-12 mb-6">
-            <label for="validationCustom03">Correo de contacto</label>
+            <label for="validationCustom03"
+              ><span class="text-danger">*</span>Correo de contacto</label
+            >
             <input
               type="email"
               class="form-control"
@@ -108,34 +111,48 @@
             <div class="invalid-feedback">Este no es un correo válido</div>
           </div>
           <div class="col-md-12 mb-12">
-            <label for="validationCustom04">Tipo de mensaje</label>
+            <label for="validationCustom04"
+              ><span class="text-danger">*</span>Tipo de mensaje</label
+            >
             <select class="custom-select" id="validationCustom04" required>
               <option selected disabled value="">Selecciona...</option>
               <option>Propuesta laboral</option>
               <option>Colaboración</option>
               <option>Otro</option>
             </select>
-            <div class="invalid-feedback">Please select a valid state.</div>
+            <div class="invalid-feedback">No es un opción válida</div>
+          </div>
+          <div class="form-group col-md-12 mb-12">
+            <label for="exampleFormControlTextarea1"
+              ><span class="text-danger">*</span>Mensaje:
+            </label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              autocomplete="off"
+              required
+            ></textarea>
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group mt-3">
           <div class="form-check">
             <input
               class="form-check-input"
               type="checkbox"
-              value=""
+              checked
               id="invalidCheck"
               required
             />
             <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
+              Acepto <a href="#">términos y condiciones</a>
             </label>
             <div class="invalid-feedback">
-              You must agree before submitting.
+              Debes aceptar para poder enviar el mensaje
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" type="submit">Enviar</button>
       </form>
 
       <script>
