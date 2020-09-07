@@ -4,6 +4,9 @@ body {
 img {
   max-height: 45em;
 }
+.carousel-caption {
+  font-size: 1em;
+}
 .bg-light {
   border: 2px solid rgb(155, 155, 155);
   border-radius: 20px;
