@@ -20,3 +20,6 @@ footer {
 .jumbotron {
   border-radius: 14px;
 }
+.card-text {
+  font-size: large;
+}
