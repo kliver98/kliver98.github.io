@@ -4,6 +4,9 @@ body {
 img {
   max-height: 45em;
 }
+footer {
+  background-color: whitesmoke;
+}
 .bg-light {
   border: 2px solid rgb(155, 155, 155);
   border-radius: 15px;
@@ -16,7 +19,4 @@ img {
 }
 .jumbotron {
   border-radius: 14px;
-}
-footer {
-  background-color: whitesmoke;
 }
